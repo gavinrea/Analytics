@@ -1,0 +1,50 @@
+# Tue Jul  1 14:48:28 EDT 2014 BFH revised per call with EJS
+# Fri Jun 20 10:26:03 EDT 2014 BFH meshes with ../config/config.yml
+en:
+
+  # initial page (aka welcome)
+  landing_page:
+    text: "Please choose one of the following options:"
+    upload_data: "UPLOAD DATA"
+    periods: "REPORTING PERIODS"
+    reports: "REPORTS"
+    analysis: "ANALYSIS"
+
+  # upload data page
+  upload_page:
+    text: "Use this page to upload data files or review already uploaded data files"
+    comment_prompt: "Enter a comment"
+    file_prompt: "Select a file to upload"
+    button_text: "Upload"
+    upload_header: "Upload A File"
+    upload_ack_text: "File has been uploaded & validated"
+    upload_nack_text: "File not accepted"
+    upload_nack_1_text: "File is not HTML or XML"
+    upload_nack_2_text: "XML parsing failed"
+    upload_nack_3_text: "XML document not a VTL"
+    upload_nack_4_text: "Processing stopped: could not insert a VTR record"
+    ok_color: "#00FF66"
+    fail_color: "#FF3300"
+    history_header: "Upload History"
+
+  # reporting periods main page
+  periods_page:
+    text: "Use this page to define periods for which reports can be run"
+    existing_header: "Choose an Existing Reporting Period"
+    new_header: "Create a New Reporting Period"
+    history_header: "Existing Periods"
+
+  # reporting periods new page
+  periods_new_page:
+    text: "Use this page to define a new reporting period"
+    back_link_text: "Return to Reporting Periods page"
+
+  # reports main page
+  reports_page:
+    text: "Use this page to run reports for pre-defined periods"
+    make_button_text: "Generate"
+    history_header: "Report Generation History"
+
+  # this is across pages
+  footer:
+    home_link_text: "Return To Main Menu"

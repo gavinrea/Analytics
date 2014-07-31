@@ -1,0 +1,101 @@
+      <h2><%=t('landing_page.upload_data')%></h2>
+      <p><%=t('upload_page.text')%></p>
+      <p>
+<%
+  status = flash[:status]
+  if !status.nil?
+    if status.include? "[0]"
+        color = t('upload_page.ok_color')
+        msg = 'OK'
+    else
+        color = t('upload_page.fail_color')
+        msg = 'FAIL'
+    end
+  end
+
+  bg = ''
+  fcdt = nil
+  updt = nil
+%>
+<%=
+    # show the data from the log record of this upload
+    unless @new_rec.nil? || @new_rec.id.nil?
+	@log = @new_rec
+	render 'dump'
+    end
+ %>
+  <span style="background-color: <%= color %>;"> <%= msg %> </span>
+<%= flash[:status] %>
+      </p>
+
+      <h3><%= t('upload_page.upload_header') %></h3>
+      <p>
+      <%= form_tag('/uploads', multipart: true) do %>
+	<p>
+	<label for="upload_comment"><%= t('upload_page.comment_prompt')%></label>: 
+	<%= text_field(:log, :comment, size: 40,required: 'required') %>
+	</p>
+	<p>
+	<label for="upload_file"><%= t('upload_page.file_prompt')%></label>: 
+	<%= file_field 'upload', 'datafile', required: 'required' %>
+	<%= submit_tag t('upload_page.button_text') %>
+	</p>
+      <% end %>
+      </p>
+
+      <p>&nbsp;</p>
+      <h3><%=t('upload_page.history_header')%></h3>
+
+      <table border=0 cellspacing="3" cellpadding="3" style="border-width:1px;border-color:black;border-style:solid;">
+        <tr>
+          <th>File Name</th>
+          <th>File Create Date</th>
+          <th>Comment</th>
+          <th>Uploaded</th>
+          <th>Status</th>
+          <th>In</th>
+          <th>Out</th>
+          <th>Dupe</th>
+          <th></th>
+        </tr>
+
+<% @logs.each do |log| %>
+  <% if log.status.include? "validated"
+     	upstat = "OK";
+        color = t('upload_page.ok_color')
+     else
+     	upstat = "FAIL";
+        color = t('upload_page.fail_color')
+     end
+     if bg == ''
+       bg = '#ccddee'
+     else
+       bg = ''
+     end
+     if log.fileCreateDate.nil?
+       fcdt = ''
+     else
+       fcdt = log.fileCreateDate.to_time.strftime("%m/%d/%Y %I:%M%p")
+     end
+     if log.created_at.nil?
+       updt = ''
+     else
+       updt = log.created_at.to_time.strftime("%m/%d/%Y %I:%M%p")
+     end
+  %>
+  <tr bgcolor="<%= bg %>">
+    <td><%= log.filename %></td>
+    <td><%= fcdt %></td>
+    <td><%= log.comment %></td>
+    <td><%= updt %></td>
+    <td bgcolor="<%= color %>"><%= upstat %></td>
+    <td align="right"><%= log.inrecs %></td>
+    <td align="right"><%= log.outrecs %></td>
+    <td align="right"><%= log.duperecs %></td>
+    <td><%= link_to 'Show', log %></td>
+  </tr>
+
+<% end %>
+</table>
+
+<br />
