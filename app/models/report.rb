@@ -1,7 +1,7 @@
 class Report < ActiveRecord::Base
-  attr_accessible :period, :report
+  attr_accessible :period, :module_name
 
-  validates_presence_of :report
+  validates_presence_of :module_name
   validates_presence_of :period
 
   # global for dealing with reports

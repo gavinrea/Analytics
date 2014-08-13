@@ -10,6 +10,31 @@
   <%= @rproc.description %>
 </p>
 
+<p>
+  <b>Module Name:</b>
+  <%= @rproc.module_name %>
+</p>
+
+<p>
+  <b>Active?</b>
+  <%= @rproc.active %>
+</p>
+
+<p>
+  <b>Support PDF Output?</b>
+  <%= @rproc.pdf_support %>
+</p>
+
+<p>
+  <b>Support CSV Output?</b>
+  <%= @rproc.csv_support %>
+</p>
+
+<p>
+  <b>Support HTML Output?</b>
+  <%= @rproc.html_support %>
+</p>
+
 
 <%= link_to 'Edit', edit_rproc_path(@rproc) %> |
 <%= link_to 'Back', rprocs_path %>

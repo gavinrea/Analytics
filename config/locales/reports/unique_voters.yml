@@ -1,0 +1,8 @@
+# Mon Aug 11 10:41:11 EDT 2014 BFH sample report config file
+# This file is for the "unique voters" report which gives a list of unique voter IDs
+en:
+
+  UniqueVotersReport: # name of the module which implements this report: primary key of reporting
+
+    # what the user sees as the report title
+    report_title: "List of Unique Voter IDs Ranked by Frequency"

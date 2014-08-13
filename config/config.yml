@@ -1,8 +1,10 @@
+# Mon Aug 11 12:12:19 EDT 2014 BFH add default_report_active
 # Fri Jun 20 10:18:35 EDT 2014 BFH first cut, meshes with en.yml
 
 common: &common
   site_name: "Trust The Vote Analytics"
   contact_email: "webmaster@deterlab.net"
+  default_report_active: 1
 
   headlinenav:
     contacturl: "http://www.trustthevote.org/contact"

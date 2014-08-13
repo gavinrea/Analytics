@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140725214528) do
+ActiveRecord::Schema.define(:version => 20140812134328) do
 
   create_table "logs", :force => true do |t|
     t.string   "comment"
@@ -41,18 +41,25 @@ ActiveRecord::Schema.define(:version => 20140725214528) do
   end
 
   create_table "reports", :force => true do |t|
-    t.integer  "report",     :limit => 255
+    t.string   "module_name"
     t.string   "period"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "rprocs", :force => true do |t|
     t.string   "name"
     t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "module_name"
+    t.boolean  "active"
+    t.boolean  "pdf_support"
+    t.boolean  "csv_support"
+    t.boolean  "html_support"
   end
+
+  add_index "rprocs", ["module_name"], :name => "index_rprocs_on_module_name", :unique => true
 
   create_table "vtrs", :force => true do |t|
     t.string   "voterid"

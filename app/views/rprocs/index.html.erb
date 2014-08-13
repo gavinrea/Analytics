@@ -1,9 +1,10 @@
 <h1>Listing rprocs</h1>
 
-<table>
+<table border=0 cellspacing="3" cellpadding="3" style="border-width:1px;border-color:black;border-style:solid;">
   <tr>
     <th>Name</th>
     <th>Description</th>
+    <th>Active?</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= rproc.name %></td>
     <td><%= rproc.description %></td>
+    <td><%= rproc.active %></td>
     <td><%= link_to 'Show', rproc %></td>
     <td><%= link_to 'Edit', edit_rproc_path(rproc) %></td>
     <td><%= link_to 'Destroy', rproc, method: :delete, data: { confirm: 'Are you sure?' } %></td>

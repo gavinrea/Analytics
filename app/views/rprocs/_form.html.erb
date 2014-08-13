@@ -19,6 +19,22 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </div>
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :pdf_support %><br />
+    <%= f.check_box :pdf_support %>
+  </div>
+  <div class="field">
+    <%= f.label :csv_support %><br />
+    <%= f.check_box :csv_support %>
+  </div>
+  <div class="field">
+    <%= f.label :html_support %><br />
+    <%= f.check_box :html_support %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

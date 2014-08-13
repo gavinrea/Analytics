@@ -4,16 +4,18 @@
   # get the list of report procedures, sort by name, make an HTML select
   rproclist = Hash.new()
   @rprocs.each do |rproc|
-    rproclist[rproc['id']] = rproc['name']
+    rproclist[rproc['module_name']] = rproc['name']
   end
+
+  # if the admin has an overriding name, use that
+  # default report name is whatever the programmer chose
+  tkey = @report.module_name + '.report_title'
+  rpt_name = t(tkey, :default => rproclist[@report.module_name])
  %>
 
 <p>
   <b>Report:</b>
-<!--  <%= @report.report %> -->
-  <%=
-    rproclist[@report.report]
-  %>
+  <%= rpt_name %>
 </p>
 
 <p>
@@ -24,7 +26,7 @@
 <p>
   <b>Output:</b>
 </p>
-<%= GenRept(@report) %>
+<%= raw(GenRept(@report)) %>
 
 <p><cite>Report Ends</cite></p>
 <!-- <%= link_to 'Edit', edit_report_path(@report) %> | -->

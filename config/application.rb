@@ -33,6 +33,9 @@ module Analytics1
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # BFH load the subfolders in the locales 
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', 'reports', '*.{rb,yml}').to_s]
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

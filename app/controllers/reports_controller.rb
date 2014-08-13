@@ -24,6 +24,8 @@ class ReportsController < ApplicationController
       format.html # show.html.erb
       format.json { render json: @report }
     end
+
+    @report.update_attribute(:updated_at, Time.now) 
   end
 
   # GET /reports/new
@@ -50,6 +52,7 @@ class ReportsController < ApplicationController
   def create
     @report = Report.new(params[:report])
     @periods = Period.all # bfh: to support matching periods with reports
+    @rprocs = Rproc.all # bfh: to support matching reports with report procedures
 
     respond_to do |format|
       if @report.save
@@ -68,7 +71,7 @@ class ReportsController < ApplicationController
     @report = Report.find(params[:id])
 
     respond_to do |format|
-      if @report.update_attributes(params[:report])
+      if @report.update_attributes(params[:module_name])
         format.html { redirect_to @report, notice: 'Report was successfully updated.' }
         format.json { head :no_content }
       else
@@ -89,4 +92,5 @@ class ReportsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

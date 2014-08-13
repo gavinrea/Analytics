@@ -14,17 +14,25 @@
     end
   end
 
-  # get the list of report procedures, sort by name, make an HTML select
+  # get the list of *active* report procedures so we can label report jobs correctly
   rproclist = Hash.new()
   @rprocs.each do |rproc|
-    rproclist[rproc['id']] = rproc['name']
+    rproclist[rproc['module_name']] = rproc['name'] if rproc.active == true
   end
+
 %>
   <span style="background-color: <%= color %>;"> <%= msg %> </span>
 <%= flash[:status] %>
       </p>
 
-<%= render 'form' %>
+<%= 
+  # if there are no active reports, there is not much to do
+  if rproclist.empty?
+    render 'noreports'
+  else
+    render 'form' 
+  end
+%>
 
       <p>&nbsp;</p>
       <h3><%=t('reports_page.history_header')%></h3>
@@ -35,7 +43,7 @@
     <th>Period</th>
     <th>Created</th>
     <th>Last Run</th>
-    <th></th>
+    <th><%= t('reports_page.make_button_text')%></th>
 <!--
     <th></th>
     <th></th>
@@ -45,15 +53,34 @@
   </tr>
 
 <% @reports.each do |report| %>
+
+<% # get the associated report procedure attributes
+   gens = Array.new()
+   base_path = reports_path
+   base_path += '/'
+   base_path += report.id.to_s
+   base_path += '?'
+   rproc = Rproc.where(module_name: report.module_name).first
+   if rproc['pdf_support'] == true
+       gens.push(link_to "PDF", (base_path + 'report_format=pdf'))
+   end
+   if rproc['csv_support'] == true
+       gens.push(link_to 'CSV', (base_path + 'report_format=csv'))
+   end
+   if rproc['html_support'] == true
+       gens.push(link_to "HTML", (base_path + 'report_format=html'))
+   end
+   format_gen = '[' + gens.join(' | ') + ']'
+ %>
+
   <tr>
-<!--    <td><%= report.report %></td> -->
     <td>
-      <%= rproclist[report.report] %>
+      <%= rproclist[report.module_name] %>
     </td>
     <td><%= report.period %></td>
     <td><%= report.created_at %></td>
     <td><%= report.updated_at %></td>
-    <td><%= link_to t('reports_page.make_button_text'), report %></td>
+    <td><%= raw(format_gen) %></td>
 <!--
     <td><%= link_to 'View', '' %></td>
     <td><%= link_to 'Show', report %></td>

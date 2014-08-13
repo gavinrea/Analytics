@@ -12,28 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :report %><br />
-<!--    <%= f.text_field :report %> -->
+    <%= f.label :module_name %><br />
     <%=
 	# get the list of report procedures, sort by name, make an HTML select
 	rproclist = Hash.new()
 	@rprocs.each do |rproc|
-	  rproclist[rproc['name']] = rproc['id']
+	  rproclist[rproc['name']] = rproc['module_name'] if rproc.active?
 	end
 
+logger.debug rproclist.inspect
 	# make the HTML select
         f.select(
-	  :report, 
+	  :module_name, 
 	  options_for_select(
-	    rproclist,
-	    :report.to_s
+	    rproclist
 	  )
 	)
      %>
   </div>
   <div class="field">
     <%= f.label :period %><br />
-<!--    <%= f.text_field :period %> -->
     <%=
 	# get a hash of period names
 	Report::Pnames.clear
