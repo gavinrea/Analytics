@@ -1,5 +1,9 @@
 Analytics1::Application.routes.draw do
 
+  # BFH do this early to trap these requests
+  get "reports/getFormats/:mn", to: 'reports#getFormats'
+  # BFH
+
   resources :rprocs
 
 
@@ -21,7 +25,7 @@ Analytics1::Application.routes.draw do
 
   get "welcome/index"
 
-  resources :uploads, :periods, :reports, :analysis, :uplogs
+#  resources :uploads, :periods, :reports, :analysis, :uplogs
 
   root :to => 'welcome#index'
 

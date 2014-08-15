@@ -16,17 +16,19 @@
     <%=
 	# get the list of report procedures, sort by name, make an HTML select
 	rproclist = Hash.new()
+	rproclist['-- choose a report--'] = ''
 	@rprocs.each do |rproc|
 	  rproclist[rproc['name']] = rproc['module_name'] if rproc.active?
 	end
 
-logger.debug rproclist.inspect
 	# make the HTML select
         f.select(
 	  :module_name, 
 	  options_for_select(
 	    rproclist
-	  )
+	  ),
+	  {},
+	  {:onchange => "set_formats()"}
 	)
      %>
   </div>
@@ -57,10 +59,18 @@ logger.debug rproclist.inspect
 	  {},
 	  sel_opt
 	)
-
      %>
   </div>
+  <div class="field">
+    <%= f.label :output_format %><br />
+    <%= radio_button_tag(:report_format, "pdf") %>
+    <%= label_tag(:format_pdf, "PDF") %>
+    <%= radio_button_tag(:report_format, "csv") %>
+    <%= label_tag(:format_csv, "CSV") %>
+    <%= radio_button_tag(:report_format, "html") %>
+    <%= label_tag(:format_html, "HTML") %>
+  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :onclick => "return validate_form()" %>
   </div>
 <% end %>

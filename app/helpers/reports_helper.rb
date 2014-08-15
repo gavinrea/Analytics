@@ -8,6 +8,11 @@ module ReportsHelper
     period_name = report.period
 
     format = params[:report_format]
+    if format.nil? or format.empty? or format.blank?
+      format = flash[:report_format]
+    end
+logger.debug "*** GenRept: params: " + params.inspect
+logger.debug "*** GenRept: flash: " + flash.inspect
 
     # expand period name into parameters
     period = Hash.new()

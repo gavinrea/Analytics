@@ -16,6 +16,7 @@ class ReportsController < ApplicationController
   # GET /reports/1
   # GET /reports/1.json
   def show
+    logger.debug "*** in the show controller..."
     @report = Report.find(params[:id])
     @rprocs = Rproc.all # bfh: to support matching reports with report procedures
     @periods = Period.all # bfh: to support matching periods with reports
@@ -53,6 +54,8 @@ class ReportsController < ApplicationController
     @report = Report.new(params[:report])
     @periods = Period.all # bfh: to support matching periods with reports
     @rprocs = Rproc.all # bfh: to support matching reports with report procedures
+
+    flash[:report_format] = params[:report_format]
 
     respond_to do |format|
       if @report.save
@@ -93,4 +96,19 @@ class ReportsController < ApplicationController
     end
   end
 
+  #
+  # BFH handle jQuery database query for form
+  #
+  def getFormats
+      @rproc_data = Rproc.where(module_name: params[:mn]).first
+      if @rproc_data.blank?
+        render :text => "record_not_found"
+      else
+	tmp = Hash.new()
+	tmp['pdf'] = @rproc_data.pdf_support;
+	tmp['csv'] = @rproc_data.csv_support;
+	tmp['html'] = @rproc_data.html_support;
+        render :text => tmp.collect { |k, v| "#{k}:#{v}" }.join('~')
+      end
+    end
 end

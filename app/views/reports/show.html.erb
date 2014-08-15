@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <%
+logger.debug "*** in the show view"
   # get the list of report procedures, sort by name, make an HTML select
   rproclist = Hash.new()
   @rprocs.each do |rproc|
