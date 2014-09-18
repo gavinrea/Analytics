@@ -37,7 +37,15 @@ class UniqueVotersReport
   def html_output(accum)
 
     retval = '<table cellspacing="3" cellpadding="3">'
-    retval += "\n<tr><th></th><th>Voter ID</th><th># Transactions</th></tr>\n"
+    retval += "\n<tr><th></th>"
+
+    # output the column headers
+    I18n.t('UniqueVotersReport.column_headers').each do |h|
+      retval += "<th>#{h}</th>"
+    end
+
+    retval += "\n</tr>\n"
+
     bg = ''
     count = 0
     accum.sort_by {|k,v| v}.reverse.each do |k,v|
@@ -62,10 +70,19 @@ class UniqueVotersReport
     fn = Rails.root.join('public','data','UniqueVotersReport.csv')
 
     csv = File.open(fn,"w")
-    csv.puts '"Voter ID","Transaction Count"'
+
+    # output the column headers
+    hdrs = Array.new;
+    I18n.t('UniqueVotersReport.column_headers').each do |h|
+      hdrs.push('"' + h + '"')
+    end
+    csv.puts hdrs.join(',')
+
+    # output the corresponding data
     accum.each do |k,v|
       csv.puts "#{k},#{v}"
     end
+
     csv.close
 
     ActionController::Base.helpers.link_to "CSV","/data/UniqueVotersReport.csv"
