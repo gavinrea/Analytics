@@ -5,19 +5,10 @@ Analytics1::Application.routes.draw do
   # BFH
 
   resources :rprocs
-
-
   resources :vtrs
-
-
   resources :reports
-
-
   resources :logs
-
-
   resources :periods
-
 
 #
 # BFH stuff starts
@@ -25,7 +16,7 @@ Analytics1::Application.routes.draw do
 
   get "welcome/index"
 
-#  resources :uploads, :periods, :reports, :analysis, :uplogs
+  resources :uploads, :periods, :reports, :analysis, :uplogs
 
   root :to => 'welcome#index'
 
