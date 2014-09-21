@@ -1,0 +1,1179 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 23:39:57 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 219ms (Views: 218.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /logs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /periods.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /reports.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /rprocs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /uploads.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /vtrs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /welcome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /reports.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /periods.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /logs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /rprocs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /uploads.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /vtrs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:39:58 -0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Processing by RprocsController#index as HTML
+  [1m[36mRproc Load (0.1ms)[0m  [1mSELECT "rprocs".* FROM "rprocs" [0m
+  Rendered rprocs/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 165ms (Views: 40.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:40:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Processing by RprocsController#index as HTML
+  [1m[35mRproc Load (0.1ms)[0m  SELECT "rprocs".* FROM "rprocs" 
+  Rendered rprocs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/uploads" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Processing by UploadsController#index as HTML
+  [1m[36mLog Load (0.1ms)[0m  [1mSELECT "logs".* FROM "logs" [0m
+  Rendered uploads/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Processing by RprocsController#index as HTML
+  [1m[35mRproc Load (0.2ms)[0m  SELECT "rprocs".* FROM "rprocs" 
+  Rendered rprocs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:45:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Processing by RprocsController#index as HTML
+  [1m[36mRproc Load (0.2ms)[0m  [1mSELECT "rprocs".* FROM "rprocs" [0m
+  Rendered rprocs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:12 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Processing by RprocsController#index as HTML
+  [1m[36mRproc Load (0.1ms)[0m  [1mSELECT "rprocs".* FROM "rprocs" [0m
+  Rendered rprocs/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 91ms (Views: 65.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /periods.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /logs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /reports.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /uploads.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /rprocs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /vtrs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /welcome.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /logs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /periods.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /reports.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /rprocs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /uploads.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /vtrs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:24 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Processing by RprocsController#index as HTML
+  [1m[35mRproc Load (0.1ms)[0m  SELECT "rprocs".* FROM "rprocs" 
+  Rendered rprocs/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:46:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/rprocs/990198676" for 127.0.0.1 at 2014-09-20 23:47:28 -0700
+Processing by RprocsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"41hHYSk7JfDzwslyiC1vSwGlOSq1KwfZ17ewx2h4j5U=", "id"=>"990198676"}
+  [1m[36mRproc Load (0.2ms)[0m  [1mSELECT "rprocs".* FROM "rprocs" WHERE "rprocs"."id" = ? LIMIT 1[0m  [["id", "990198676"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (28.2ms)[0m  [1mDELETE FROM "rprocs" WHERE "rprocs"."id" = ?[0m  [["id", 990198676]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/rprocs
+Completed 302 Found in 32ms (ActiveRecord: 29.3ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:47:28 -0700
+Processing by RprocsController#index as HTML
+  [1m[36mRproc Load (0.1ms)[0m  [1mSELECT "rprocs".* FROM "rprocs" [0m
+  Rendered rprocs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Processing by RprocsController#index as HTML
+  [1m[35mRproc Load (0.2ms)[0m  SELECT "rprocs".* FROM "rprocs" 
+  Rendered rprocs/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Processing by RprocsController#index as HTML
+  [1m[36mRproc Load (0.1ms)[0m  [1mSELECT "rprocs".* FROM "rprocs" [0m
+  Rendered rprocs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 87ms (Views: 60.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /logs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /periods.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /rprocs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /reports.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /uploads.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /vtrs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /welcome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /logs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /periods.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /reports.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /rprocs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /uploads.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /vtrs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /welcome.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:45 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/rprocs" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Processing by RprocsController#index as HTML
+  [1m[35mRproc Load (0.1ms)[0m  SELECT "rprocs".* FROM "rprocs" 
+  Rendered rprocs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /rprocs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /logs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /periods.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /uploads.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /vtrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /logs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/periods.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /periods.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rprocs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /rprocs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/uploads.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /uploads.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vtrs.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /vtrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 23:47:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)

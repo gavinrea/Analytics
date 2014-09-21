@@ -1,0 +1,9 @@
+# Mon Aug 11 16:37:48 EDT 2014 BFH report definition for Unique Voters report
+UniqueVoters1:
+    name: "List Unique Voter IDs"
+    description: "List of unique voter IDs ranked in descending order by frequence of appearance"
+    module_name: "UniqueVotersReport"
+    active: true
+    pdf_support: false
+    csv_support: true
+    html_support: true
