@@ -1,0 +1,9 @@
+# Mon Sep 22 17:42:31 EDT 2014 BFH report definition for Voter Dates report
+VoterDates:
+    name: "Lowest & Highest Voter Dates"
+    description: "List of the lowest and highest dates associated with voter ID's"
+    module_name: "VoterDatesReport"
+    active: true
+    pdf_support: false
+    csv_support: true
+    html_support: true

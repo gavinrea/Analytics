@@ -61,13 +61,13 @@
    base_path += report.id.to_s
    base_path += '?'
    rproc = Rproc.where(module_name: report.module_name).first
-   if rproc['pdf_support'] == true
+   if !rproc.nil? and rproc['pdf_support'] == true
        gens.push(link_to "PDF", (base_path + 'report_format=pdf'))
    end
-   if rproc['csv_support'] == true
+   if !rproc.nil? and rproc['csv_support'] == true
        gens.push(link_to 'CSV', (base_path + 'report_format=csv'))
    end
-   if rproc['html_support'] == true
+   if !rproc.nil? and rproc['html_support'] == true
        gens.push(link_to "HTML", (base_path + 'report_format=html'))
    end
    format_gen = '[' + gens.join(' | ') + ']'

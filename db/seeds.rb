@@ -12,6 +12,14 @@ namespace :db do
       flags[rproc.module_name] = rproc.active
     end
     
+    # start fresh with target output file "rprocs.yml"
+    output_name = Rails.root.join('db','fixtures','rprocs.yml')
+    if File.exist?(output_name)
+      File.rename(output_name,"blorty.yml")
+      File.unlink(output_name)
+    end
+
+    # get a list of the files to be processed: first concatenate, then load
     path_name = Rails.root.join('db','fixtures','*.{yml,rb}')
     puts " * loading from #{path_name}..."
 
@@ -20,24 +28,17 @@ namespace :db do
       # then execute the ruby file instead
 
       if file =~ /.*\.yml$/
-	this_name = File.basename(file, '.*')
-
         # since the table is rprocs, the file has to be rprocs.yml
-	if this_name == 'rprocs'
-	  canonical_name = file
-	else
-	  canonical_name = file.gsub(/#{this_name}/,"rprocs")
-	  FileUtils.cp(file,canonical_name)
-	end
-        puts " * Running yml data fixture #{file} (#{canonical_name})"
-        ActiveRecord::Fixtures.create_fixtures('db/fixtures', 'rprocs')
-	File.unlink(canonical_name)
+	system("cat #{file} >> #{output_name}")
+        puts " * Adding yml data fixture #{file} to #{output_name}..."
       else
         puts " * Running ruby data fixture #{file}"
         load file
       end
 
     end
+    ActiveRecord::Fixtures.create_fixtures('db/fixtures', 'rprocs')
+    File.unlink(output_name)
 
     # set all active flags to the appropriate value
     @rprocs = Rproc.all
