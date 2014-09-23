@@ -15,17 +15,23 @@
     <%= f.label :module_name %><br />
     <%=
 	# get the list of report procedures, sort by name, make an HTML select
+	default_rp = nil
 	rproclist = Hash.new()
 	rproclist['-- choose a report--'] = ''
 	@rprocs.each do |rproc|
 	  rproclist[rproc['name']] = rproc['module_name'] if rproc.active?
+	  default_rp = rproc['module_name'] if rproc['module_name'] === @report.module_name
 	end
+
+logger.debug @rprocs.inspect
+logger.debug default_rp.inspect
 
 	# make the HTML select
         f.select(
 	  :module_name, 
 	  options_for_select(
-	    rproclist
+	    rproclist,
+	    default_rp
 	  ),
 	  {},
 	  {:onchange => "set_formats()"}

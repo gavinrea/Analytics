@@ -1,0 +1,12 @@
+# Mon Sep 22 17:51:06 EDT 2014 BFH report config file for Voter Dates report
+en:
+
+  VoterDatesReport: # name of the module which implements this report: primary key of reporting
+
+    # what the user sees as the report title
+    report_title: "The Lowest & Highest Dates of Voter Information"
+
+    # the column headers for the output
+    column_headers:
+      - "Lowest Date"
+      - "Highest Date"
