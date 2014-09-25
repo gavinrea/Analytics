@@ -2,12 +2,12 @@
 # This file is for the "unique voters" report which gives a list of unique voter IDs
 en:
 
-  UniqueVotersReport1: # name of the module which implements this report: primary key of reporting
+  UniqueVotersReport: # name of the module which implements this report: primary key of reporting
 
     # what the user sees as the report title
-    report_title: "List of Unique Voter IDs Ranked by Frequency"
+    report_title: "List of Voter Actions and Frequency"
 
     # the column headers for the output
     column_headers:
-      - "Voter ID"
-      - "Transaction Count"
+      - "Action Type"
+      - "Num Actions"

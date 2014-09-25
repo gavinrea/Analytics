@@ -42,3 +42,6 @@ gem 'jquery-rails'
 gem 'execjs'
 gem 'therubyracer'
 gem "rspec-rails"
+
+#added by gavin rea to fix nokogiri load error
+gem 'nokogiri'

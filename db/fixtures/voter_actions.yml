@@ -1,8 +1,8 @@
-# GavinTest:
-#     name: "List Unique Voter Actions/Forms"
-#     description: "List of voter Actions and Forms, how many voters have done and action, and how many have done the subaction etc..."
-#     module_name: "VoterActionReport"
-#     active: true
-#     pdf_support: false
-#     csv_support: false
-#     html_support: true
+VoterActions:
+    name: "List Unique Voter Actions"
+    description: "List of voter Actions, how many voters have done and action, and how many have done the subaction etc..."
+    module_name: "VoterActionReport"
+    active: true
+    pdf_support: false
+    csv_support: false
+    html_support: true

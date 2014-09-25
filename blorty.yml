@@ -1,0 +1,34 @@
+# # Mon Aug 11 16:37:48 EDT 2014 BFH report definition for Unique Voters report
+# UniqueVoters:
+#     name: "List Unique Voter IDs"
+#     description: "List of unique voter IDs ranked in descending order by frequence of appearance"
+#     module_name: "UniqueVotersReport"
+#     active: true
+#     pdf_support: false
+#     csv_support: true
+#     html_support: true
+# # # Mon Aug 11 16:37:48 EDT 2014 BFH report definition for Unique Voters report
+# # UniqueVoters1:
+# #     name: "List Unique Voter IDs"
+# #     description: "List of unique voter IDs ranked in descending order by frequence of appearance"
+# #     module_name: "UniqueVotersReport"
+# #     active: true
+# #     pdf_support: false
+# #     csv_support: true
+# #     html_support: true
+# # # GavinTest:
+# # #     name: "List Unique Voter Actions/Forms"
+# # #     description: "List of voter Actions and Forms, how many voters have done and action, and how many have done the subaction etc..."
+# # #     module_name: "VoterActionReport"
+# # #     active: true
+# # #     pdf_support: false
+# # #     csv_support: false
+# # #     html_support: true# Mon Sep 22 17:42:31 EDT 2014 BFH report definition for Voter Dates report
+# # VoterDates:
+# #     name: "Lowest & Highest Voter Dates"
+# #     description: "List of the lowest and highest dates associated with voter ID's"
+# #     module_name: "VoterDatesReport"
+# #     active: true
+# #     pdf_support: false
+# #     csv_support: true
+# #     html_support: true
