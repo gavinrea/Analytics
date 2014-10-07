@@ -1,7 +1,7 @@
 VoterActions:
     name: "List Unique Voter Actions"
     description: "List of voter Actions, how many voters have done and action, and how many have done the subaction etc..."
-    module_name: "VoterActionReport"
+    module_name: "VoterActionsReport"
     active: true
     pdf_support: false
     csv_support: false

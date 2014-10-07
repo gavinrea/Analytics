@@ -7,15 +7,11 @@ class DataFile < ActiveRecord::Base
       'no file to upload'
     else
 
-      # make sure that your working directory is present
-      directory = "public/data"
-      unless File.directory?(directory) 
-        if File.exist?(directory)
-          File.unlink(directory)
-        end
-        Dir.mkdir(directory)
-        File.chmod(0700,directory)
-      end
+      
+    end
+    Dir.mkdir(directory)
+    File.chmod(0700,directory)
+  end
 
       # get the file name
       name =  upload['datafile'].original_filename

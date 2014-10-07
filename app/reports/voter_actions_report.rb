@@ -13,23 +13,30 @@ class VoterActionsReport
     rows = ReportsHelper.get_report_items(period)
 
     # do the actual processing
-    retval = '' 			# what we return
-    accum = Hash.new()			# where we accumulate data to report
+    retval = ''       # what we return
+    accum = Hash.new()      # where we accumulate data to report
 
-    #Here is where to insert new logic!
+    
+    # #Here is where to insert new logic!
+
+    # rows.each do |row|
+    #   if accum.has_key?(row.action) accum[row.action] += 1
+    #   else accum[row.action] = 0
+        
+    #   end
 
     rows.each do |row|
-      if accum.has_key?(row.action) accum[row.action] += 1
-      else accum[row.action] = 0
-        
-      end
+      k = row['voterid']
+      accum[k] = 0 if accum[k].nil?
+      accum[k] += 1
+    end
 
     # send the processed data to the appropriate output routine
     if format == 'html'
-      return html_output(accum)
+        return html_output(accum)
     end
     if format == 'csv'
-      return csv_output(accum)
+        return csv_output(accum)
     end
 
     return "Programming error in report generation"
@@ -90,3 +97,5 @@ class VoterActionsReport
     ActionController::Base.helpers.link_to "CSV","/data/UniqueVotersReport.csv"
   end
 end
+
+
