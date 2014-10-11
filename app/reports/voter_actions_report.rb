@@ -19,17 +19,19 @@ class VoterActionsReport
     
     # #Here is where to insert new logic!
 
-    # rows.each do |row|
-    #   if accum.has_key?(row.action) accum[row.action] += 1
-    #   else accum[row.action] = 0
-        
-    #   end
-
     rows.each do |row|
-      k = row['voterid']
-      accum[k] = 0 if accum[k].nil?
-      accum[k] += 1
+      if accum.has_key?(row.action) 
+        accum[row.action] += 1
+      else 
+        accum[row.action] = 0   
+      end
     end
+
+    # rows.each do |row|
+    #   k = row['voterid']
+    #   accum[k] = 0 if accum[k].nil?
+    #   accum[k] += 1
+    # end
 
     # send the processed data to the appropriate output routine
     if format == 'html'
