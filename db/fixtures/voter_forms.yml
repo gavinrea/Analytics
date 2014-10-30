@@ -1,0 +1,9 @@
+# Mon Aug 11 16:37:48 EDT 2014 BFH report definition for Unique Voters report
+VoterForms:
+    name: "List Voter Forms and thier requencies"
+    description: "List of unique voter forms and their respective frequencies"
+    module_name: "VoterFormsReport"
+    active: true
+    pdf_support: false
+    csv_support: true
+    html_support: true

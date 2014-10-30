@@ -1,0 +1,315 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"er",
+				"er	embed ruby ERB"
+			],
+			[
+				"ass",
+				"assets"
+			],
+			[
+				"slides",
+				"slides_total"
+			],
+			[
+				"slide",
+				"slide_current"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/stylesheets/application.css.scss",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/models/pin.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/Gemfile",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config/environments/production.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/pins/_form.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/controllers/pins_controller.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/javascripts/application.js",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/layouts/application.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/pins/show.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/pins/index.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/public/404.html",
+		"/Users/gavinrea/Ruby Projects/pinteresting/test/helpers/pages_helper_test.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/pages/home.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/.gitignore",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/controllers/application_controller.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config/application.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/controllers/pages_controller.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/models/.keep",
+		"/Users/gavinrea/Ruby Projects/pinteresting/tmp/cache/assets/development/sass/9714f5aa81f16836ef06d4fca0b69ecea39f1de9/_modals.scssc",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config/initializers/mime_types.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/test/fixtures/pins.yml",
+		"/Users/gavinrea/Ruby Projects/pinteresting/pinteresting.sublime-project",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/models/user.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/pages/_ajax.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config/routes.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/db/schema.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/db/migrate/20141023193157_create_pins.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/layouts/_header.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/devise/registrations/new.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/devise/sessions/new.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/gavinrea/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/pages/about.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config/environments/development.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/layouts/_googleAnalytics.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/views/layouts/_mixedpanel.html.erb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config/initializers/devise.rb",
+		"/Users/gavinrea/Ruby Projects/pinteresting/config.ru",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/stylesheets/bootstrap_and_customization.css.scss",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/stylesheets/pages.css.scss",
+		"/Users/gavinrea/Ruby Projects/pinteresting/app/assets/stylesheets/application.css",
+		"/Users/gavinrea/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gavinrea/Documents/ruby class example.rb",
+		"/Users/gavinrea/Analytics/db/fixtures/voter_actions.yml",
+		"/Users/gavinrea/Analytics/app/reports/voter_actions_report.rb",
+		"/Users/gavinrea/Analytics/app/helpers/reports_helper.rb",
+		"/Users/gavinrea/Analytics/app/models/vtr.rb",
+		"/Users/gavinrea/Analytics/app/models/data_file.rb",
+		"/Users/gavinrea/Analytics/Gemfile",
+		"/Users/gavinrea/Analytics/data/test-xml/fail-1.txt",
+		"/Users/gavinrea/Analytics/public/data",
+		"/Users/gavinrea/Analytics/db/fixtures/uniquevoters.yml",
+		"/Users/gavinrea/Analytics/config/locales/reports/unique_voters.yml",
+		"/Users/gavinrea/Analytics/app/models/period.rb",
+		"/Users/gavinrea/Analytics/config/routes.rb",
+		"/Users/gavinrea/Analytics/config/locales/reports/voter_actions.yml",
+		"/Users/gavinrea/Analytics/db/fixtures/rprocs.yml",
+		"/Users/gavinrea/Analytics/app/reports/unique_voters_report1.rb",
+		"/Users/gavinrea/Analytics/config/locales/reports/unique_voters1.yml",
+		"/Users/gavinrea/Analytics/db/fixtures/uniquevoters1.yml",
+		"/Users/gavinrea/Analytics/db/fixtures/voteractions.yml",
+		"/Users/gavinrea/Analytics/db/fixtures/uniquevoters copy.yml",
+		"/Users/gavinrea/Analytics/app/reports/voter_action_report.rb",
+		"/Users/gavinrea/Analytics/db/fixtures/voter_action.yml",
+		"/Users/gavinrea/Analytics/config/locales/reports/voter_action.yml",
+		"/Users/gavinrea/Analytics/app/reports/unique_voters_report.rb",
+		"/Users/gavinrea/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/gavinrea/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/gavinrea/,/Users/gavinrea/Ruby Projects/pinteresting",
+			"/Users/gavinrea/Analytics/",
+			"/Users/gavinrea/Analytics/data"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"</td>",
+			"<td>",
+			"js is added to application!",
+			"alert",
+			"added to ",
+			"added",
+			"description",
+			"onreadystate",
+			".form",
+			"secret_key",
+			"default",
+			"GenRept",
+			"genrept",
+			"voteraction",
+			"public/data",
+			"Vtr",
+			"receive",
+			"submit",
+			"complete"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"form"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Analytics.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"html.erb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"pin.rb",
+				"app/models/pin.rb"
+			],
+			[
+				"pinscon",
+				"app/controllers/pins_controller.rb"
+			],
+			[
+				"page",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"app",
+				"config/application.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

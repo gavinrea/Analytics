@@ -6,3 +6,5 @@ VoterActions:
     pdf_support: false
     csv_support: false
     html_support: true
+
+    defaults write com.apple.screencapture location /Users/gavinrea/Pictures/Screenshots/

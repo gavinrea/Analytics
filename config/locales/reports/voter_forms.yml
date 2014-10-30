@@ -1,0 +1,12 @@
+# This file is for the "unique voters" report which gives a list of unique voter IDs
+en:
+
+  VoterFormsReport: # name of the module which implements this report: primary key of reporting
+
+    # what the user sees as the report title
+    report_title: "List of Unique Voter Forms and their frequency"
+
+    # the column headers for the output
+    column_headers:
+      - "Form Type"
+      - "Num Forms"

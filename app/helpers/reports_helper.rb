@@ -28,6 +28,8 @@ logger.debug "*** GenRept: flash: " + flash.inspect
     end
 
     # call the class based on what the rproc says
+    # This is where the report is being created!!! So must be source of error
+    # Question is: does rproc_key exist?
     rpt = Object.const_get(rproc_key).new
     retval = rpt.generate(format,period)
 
