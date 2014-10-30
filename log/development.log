@@ -23346,6 +23346,7 @@ ActionView::Template::Error (uninitialized constant VoterActionReport):
   Rendered /Users/gavinrea/.rvm/gems/ruby-2.1.2/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
   Rendered /Users/gavinrea/.rvm/gems/ruby-2.1.2/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
   Rendered /Users/gavinrea/.rvm/gems/ruby-2.1.2/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+<<<<<<< HEAD
 Connecting to database specified by database.yml
 
 
@@ -27627,3 +27628,5 @@ ActionView::Template::Error (undefined method `has_key?' for nil:NilClass):
   Rendered /Users/gavinrea/.rvm/gems/ruby-2.1.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
   Rendered /Users/gavinrea/.rvm/gems/ruby-2.1.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered /Users/gavinrea/.rvm/gems/ruby-2.1.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+=======
+>>>>>>> parent of a43f9fc... Edit DB, add Voter Action Code

@@ -15,6 +15,7 @@ class VoterActionsReport
 
     # do the actual processing
     retval = ''       # what we return
+<<<<<<< HEAD
     accumVtrActions, accumVtrForms, accumVtrNoteTypes  = Hash.new()# where we accumulate data to report
     accumArray = [accumVtrActions, accumVtrForms, accumVtrNoteTypes]; #where we will put all the different accums
 
@@ -33,9 +34,27 @@ class VoterActionsReport
           accum.has_key?(vtr.notes) ? accum[vtr.notes] += 1 : accum[vtr.notes] = 0 
         else puts "invalid accum in VoterActionsReport::generate"
       end
+=======
+    accum = Hash.new()      # where we accumulate data to report
+
+    
+    # #Here is where to insert new logic!
+
+    # rows.each do |row|
+    #   if accum.has_key?(row.action) accum[row.action] += 1
+    #   else accum[row.action] = 0
+        
+    #   end
+
+    rows.each do |row|
+      k = row['voterid']
+      accum[k] = 0 if accum[k].nil?
+      accum[k] += 1
+>>>>>>> parent of a43f9fc... Edit DB, add Voter Action Code
     end
   end
 
+<<<<<<< HEAD
     # Brendan's old code
     # rows.each do |row|
     #   k = row['voterid']
@@ -43,6 +62,8 @@ class VoterActionsReport
     #   accum[k] += 1
     # end
 
+=======
+>>>>>>> parent of a43f9fc... Edit DB, add Voter Action Code
     # send the processed data to the appropriate output routine
     if format == 'html'
       return html_output(accumVtrActions, accumVtrForms, accumVtrNoteTypes)
