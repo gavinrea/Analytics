@@ -35,7 +35,7 @@ class VoterActionsReport
             accum[vtr.action] += 1 
             #otherwise create category and set it to 0
           else 
-            accum[vtr.action] = 0 
+            accum[vtr.action] = 1 
           end
 
         elsif accum == accumVtrForms
@@ -44,7 +44,7 @@ class VoterActionsReport
           elsif accum.has_key?(vtr.form)
             accum[vtr.form] += 1 
           else 
-            accum[vtr.form] = 0 
+            accum[vtr.form] = 1 
           end
 
         elsif accum == accumVtrNoteTypes
@@ -53,7 +53,7 @@ class VoterActionsReport
           elsif accum.has_key?(vtr.formNote) 
             accum[vtr.formNote] += 1 
           else 
-            accum[vtr.formNote] = 0 
+            accum[vtr.formNote] = 1 
           end
 
           #really we should do some error handling here
@@ -83,7 +83,7 @@ class VoterActionsReport
     headerStartIndex = 0
     headerLength = 2 #currently Action, numActions, %total
     accums.each do |accum| 
-      retval += makeHtmlTable(accum, headerStartIndex, headerLength, true) + "<br>\n" 
+      retval += makeHtmlTable(accum, headerStartIndex, headerLength, true) + "<br>\n"
       headerStartIndex +=2
     end
     # return the formatted HTML
