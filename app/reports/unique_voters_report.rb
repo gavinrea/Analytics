@@ -13,7 +13,6 @@ class UniqueVotersReport
     rows = ReportsHelper.get_report_items(period)
 
     # do the actual processing
-    retval = '' 			# what we return
     accum = Hash.new()			# where we accumulate data to report
 
     rows.each do |row|

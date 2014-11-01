@@ -34,4 +34,7 @@ Analytics1::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #set logger to print debug statements
+  # config.log_level = :debug
 end

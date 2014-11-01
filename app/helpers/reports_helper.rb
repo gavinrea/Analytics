@@ -42,7 +42,7 @@ logger.debug "*** GenRept: flash: " + flash.inspect
 
   def get_report_items(period)
     # get a list of VTRs between these dates and make a hash of the formNote
-    Vtr.where("date(date) between ? and ?", period['lodate'].to_s(:db), period['hidate'].to_s(:db))
+    Vtr.where("date(date) between ? and ?", period['lodate'], period['hidate'])
   end
   module_function :get_report_items
 end

@@ -13,57 +13,55 @@ class VoterActionsReport
     # this gets voters within the specified period
     votersInPeriod = ReportsHelper.get_report_items(period)
 
-    # do the actual processing
-    retval = ''       # what we return
-<<<<<<< HEAD
-    accumVtrActions, accumVtrForms, accumVtrNoteTypes  = Hash.new()# where we accumulate data to report
+    # do the actual processing where we accumulate data to report
+    accumVtrActions = {other: 0}
+    accumVtrForms = {other: 0}
+    accumVtrNoteTypes  = {other: 0}
     accumArray = [accumVtrActions, accumVtrForms, accumVtrNoteTypes]; #where we will put all the different accums
 
-    puts accumArray
+    #can we DRY this up?
 
     #Here is where to insert new logic!
     votersInPeriod.each do |vtr|
       accumArray.each do |accum|
 
-        # if we already have the keyadd 1 to tally
+        # make sure we have Action accum
         if accum == accumVtrActions
-          accum.has_key?(vtr.action) ? accum[vtr.action] += 1 : accum[vtr.action] = 0 
+          #if there is no action, put in other category
+          if vtr.action.nil? 
+            accum[:other] += 1
+            #if it already has the key, add to tally
+          elsif accum.has_key?(vtr.action) 
+            accum[vtr.action] += 1 
+            #otherwise create category and set it to 0
+          else 
+            accum[vtr.action] = 0 
+          end
+
         elsif accum == accumVtrForms
-          accum.has_key?(vtr.form) ? accum[vtr.form] += 1 : accum[vtr.form] = 0 
+          if vtr.form.nil? 
+            accum[:other] += 1
+          elsif accum.has_key?(vtr.form)
+            accum[vtr.form] += 1 
+          else 
+            accum[vtr.form] = 0 
+          end
+
         elsif accum == accumVtrNoteTypes
-          accum.has_key?(vtr.notes) ? accum[vtr.notes] += 1 : accum[vtr.notes] = 0 
+          if vtr.formNote.nil? 
+            accum[:other] += 1
+          elsif accum.has_key?(vtr.formNote) 
+            accum[vtr.formNote] += 1 
+          else 
+            accum[vtr.formNote] = 0 
+          end
+
+          #really we should do some error handling here
         else puts "invalid accum in VoterActionsReport::generate"
+        end
       end
-=======
-    accum = Hash.new()      # where we accumulate data to report
-
-    
-    # #Here is where to insert new logic!
-
-    # rows.each do |row|
-    #   if accum.has_key?(row.action) accum[row.action] += 1
-    #   else accum[row.action] = 0
-        
-    #   end
-
-    rows.each do |row|
-      k = row['voterid']
-      accum[k] = 0 if accum[k].nil?
-      accum[k] += 1
->>>>>>> parent of a43f9fc... Edit DB, add Voter Action Code
     end
-  end
 
-<<<<<<< HEAD
-    # Brendan's old code
-    # rows.each do |row|
-    #   k = row['voterid']
-    #   accum[k] = 0 if accum[k].nil?
-    #   accum[k] += 1
-    # end
-
-=======
->>>>>>> parent of a43f9fc... Edit DB, add Voter Action Code
     # send the processed data to the appropriate output routine
     if format == 'html'
       return html_output(accumVtrActions, accumVtrForms, accumVtrNoteTypes)
@@ -79,10 +77,15 @@ class VoterActionsReport
   # create the HTML version of the report and display it in the browser
   # let's modify this so that it can take multiple hashes (one for action, one for form, etc.)
   def html_output(*accums)
-    retval = ''
+    #actually, should be a combo of different functions
+    retval = ''#HTML string to return
+    # place in 2 headers for each accum starting at the first
     headerStartIndex = 0
-    headerLength = 2
-    accums.each { |accum| retval += makeHtmlTable(accum, headerStartIndex, headerLength, true)}
+    headerLength = 2 #currently Action, numActions, %total
+    accums.each do |accum| 
+      retval += makeHtmlTable(accum, headerStartIndex, headerLength, true) + "<br>\n" 
+      headerStartIndex +=2
+    end
     # return the formatted HTML
     retval
   end
@@ -91,14 +94,20 @@ class VoterActionsReport
   # we'll modify the accum to have an array for the key that holds the value and it's percent of total
   def calcAccumPercentages(accum)
     total = 0
-    # once through to get total
-    accum.each do |k, v| total += v
-      # another time to do the
-      accum.each { |k, v| v = [v, v / total * 100] }
+    # once through to sum total from values
+    accum.each_value {|v| total += v}
+      # another time to do the percentage, creating an array of [value, percentage] in place of previous value
+      accum.each do |k, v| 
+      #just in case total is 0
+
+      Rails.logger.debug "v = #{v}, total = #{total}, % = #{v / total}"
+      accum[k] = [v, (v / total.to_f * 100).round(1)]
     end
+
   end
+
   def makeHtmlTable(accum, headerStartIndex, numHeaders, displayPercentages)
-    calcAccumPercentages(accum) if displayPercentages
+    calcAccumPercentages(accum) if displayPercentages #boolean
 
     # set basic table spacing and padding
     retval = '<table cellspacing="3" cellpadding="3">'
@@ -111,8 +120,10 @@ class VoterActionsReport
     I18n.t('VoterActionsReport.column_headers').slice(headerStartIndex, numHeaders).each do |header|
       # adds in the table headers
       retval += "<th>#{header}</th>"
-      retval += "<th>Percent Total</th>" if displayPercentages
     end
+    #percentage total will be last header
+    retval += "<th>Percent Total</th>" if displayPercentages
+
     # end tag for the table row
     retval += "\n</tr>\n"
     # background
@@ -123,20 +134,20 @@ class VoterActionsReport
     # then places in alternating lightgrey and white bgs
     accum.sort_by {|k,v| v}.reverse.each do |k,v|
       count += 1
+      # will alternate between blank and lightgrey
       if bg.blank?
         bg = 'lightgrey'
       else
         bg = ''
       end
 
-      # sets background color of table row to bg
-      # puts index in table cell and alligns right
-      # puts the key in table cell
-      # puts value in table cell and alligns right
-      # ends row
-      retval += "<tr bgcolor=\"#{bg}\"><td align=\"right\">#{count}</td><td>#{k}</td>"
-      retval +="<td align=\"right\">#{v[0]}</td></tr>\n" if displayPercentages
-      retval +="<td align=\"right\">#{1}</td></tr>\n"
+      #count is the index in table, k is the row key
+      retval +="<tr bgcolor=\"#{bg}\"><td align=\"right\">#{count}</td><td>#{k}</td>"
+      retval +="<td align=\"right\">#{v[0]}</td>" 
+
+      Rails.logger.debug "displayPercentages = #{displayPercentages}"
+      Rails.logger.debug "percentage = #{v[1]}"
+      retval +="<td align=\"right\">#{v[1]}</td></tr>\n" if displayPercentages
 
     end
     # closes table

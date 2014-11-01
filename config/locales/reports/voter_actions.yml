@@ -9,9 +9,9 @@ en:
 
     # the column headers for the output
     column_headers:
-      - "Action Type"
-      - "Num Actions"
       - "Form Type"
       - "Num Forms"
+      - "Action Type"
+      - "Num Actions"   
       - "Form Note"
       - "Num Form Notes"
