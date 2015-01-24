@@ -110,7 +110,7 @@ class VoterActionsReport
     # set basic table spacing and padding
     retval = '<table cellspacing="3" cellpadding="3">'
     # linefeed, tr = row, th = header cell (in this case, the first one which is empty)
-    retval += "\n<tr><th></th>"
+    retval += "\n<tr><th></th>" #no header for the index collumn
     # output the column headers
     # I18n is internationaliztion gem for translation
     # .t looks up the translation, in this case for column_headers(comes from locales/reports/voter_actions.yml)
@@ -119,6 +119,8 @@ class VoterActionsReport
       # adds in the table headers
       retval += "<th>#{header}</th>"
     end
+
+  retval +="<th>Percentage</th>" if displayPercentages
 
     # end tag for the table row
     retval += "\n</tr>\n"
@@ -151,13 +153,17 @@ class VoterActionsReport
       retval +="<td>#{(subtotal / total.to_f * 100).round(1)}</td>" if displayPercentages
 
       #now we nest the table
-      retval +="<td align=\"right\">" + '<table cellspacing="3" cellpadding="3">' + "\n"
+      retval +="<td align=\"right\">" + '<table border = "1" cellspacing="3" cellpadding="3">' + "\n"
 
       # only going through once right now :(
         # Rails.logger.debug "current value: #{v.inspect}"
         v.sort_by {|key,value| value}.reverse.each do |key,value|
           # Rails.logger.debug "went through for key: #{key}"
-          retval +="<tr>" 
+          I18n.t('VoterActionsReport.column_headers').slice(headerStartIndex, 1).each do |header|
+          retval +="<tr><th></th><th>#{header}</th>"
+        end
+          retval +="<th>Percentage</th>" if displayPercentages
+          retval +="</tr> <tr>" 
         retval +="<td>#{key}</td>" #row with key
         retval +="<td align=\"right\">#{value}</td>" #value
         retval +="<td align=\"right\">#{(value / total.to_f * 100).round(1)}</td>"  if displayPercentages#Percent
