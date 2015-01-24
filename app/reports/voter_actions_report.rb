@@ -34,9 +34,9 @@ class VoterActionsReport
          accumVtrForms[vtr.form] = {"other" => 0} if !accumVtrForms.has_key?(vtr.form) #if we have no category, make a new one
 
         if vtr.formNote.nil? #if no formNote exists, put in other
-           accumVtrForms[vtr.Form]["other"] = 0 if accumVtrForms[vtr.form]["other"].nil?
+         accumVtrForms[vtr.Form]["other"] = 0 if accumVtrForms[vtr.form]["other"].nil?
 
-          accumVtrForms[vtr.form]["other"] += 1
+         accumVtrForms[vtr.form]["other"] += 1
 
         elsif !accumVtrForms[vtr.form].has_key?(vtr.formNote) #we don't have the category, make a new one
           accumVtrForms[vtr.form] = {vtr.formNote => 1}
@@ -45,7 +45,7 @@ class VoterActionsReport
         end
       end
 
-    Rails.logger.debug accumVtrForms.inspect
+      Rails.logger.debug accumVtrForms.inspect
       # ACTIONS
 
       if vtr.action.nil? 
@@ -60,7 +60,7 @@ class VoterActionsReport
           accumVtrActions[vtr.action]["other"] = 0 if accumVtrActions[vtr.action]["other"].nil?
           accumVtrActions[vtr.action]["other"] += 1 
 # one of the above things being added is nil :(
-        elsif !accumVtrActions[vtr.action].has_key?(vtr.notes) 
+elsif !accumVtrActions[vtr.action].has_key?(vtr.notes) 
           # Rails.logger.debug " #{accumVtrActions[vtr.action]}"
           # Rails.logger.debug "is #{vtr.action} #{vtr.notes} nil?: #{accumVtrActions[vtr.action][vtr.notes]}"
           accumVtrActions[vtr.action] = {vtr.notes => 1}
@@ -124,7 +124,7 @@ class VoterActionsReport
 
 
 
-  retval +="<th>Percentage</th>" if displayPercentages
+    retval +="<th>Percentage</th>" if displayPercentages
 
     # end tag for the table row
     retval += "\n</tr>\n"
@@ -157,15 +157,23 @@ class VoterActionsReport
       retval +="<td>#{(subtotal / total.to_f * 100).round(1)}</td>" if displayPercentages
 
       #now we nest the table
-      retval +="<td align=\"right\">" + '<table border = "1" cellspacing="3" cellpadding="3">' + "\n"
+      retval +="<td align=\"left\">" + '<table border = "1" cellspacing="3" cellpadding="3">' + "\n"
 
       # only going through once right now :(
+        if displayPercentages
+          total = 0        
+          v.each_value {|val| total += val}
+        end
+
+
         # Rails.logger.debug "current value: #{v.inspect}"
         v.sort_by {|key,value| value}.reverse.each do |key,value|
+
+
           # Rails.logger.debug "went through for key: #{key}"
           I18n.t('VoterActionsReport.column_headers').slice(headerStartIndex, 1).each do |header|
-          retval +="<tr><th></th><th>#{header}</th>"
-        end
+            retval +="<tr><th></th><th>#{header}</th>"
+          end
           retval +="<th>Percentage</th>" if displayPercentages
           retval +="</tr> <tr>" 
         retval +="<td>#{key}</td>" #row with key
