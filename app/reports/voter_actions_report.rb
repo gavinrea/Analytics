@@ -96,8 +96,9 @@ class VoterActionsReport
     # place in 2 headers for each accum starting at the first
     headerStartIndex = 0
     headerLength = 2 #currently Action, numActions, %total
+
     accums.each do |accum| 
-      retval += makeHtmlTable(accum, headerStartIndex, headerLength, true) + "<br>\n"
+
       retval += makeNestedHtmlTable(accum, headerStartIndex, headerLength, true) + "<br>\n"
       headerStartIndex +=2
     end
@@ -115,10 +116,13 @@ class VoterActionsReport
     # I18n is internationaliztion gem for translation
     # .t looks up the translation, in this case for column_headers(comes from locales/reports/voter_actions.yml)
     # then iterates through
+    
     I18n.t('VoterActionsReport.column_headers').slice(headerStartIndex, numHeaders).each do |header|
       # adds in the table headers
       retval += "<th>#{header}</th>"
     end
+
+
 
   retval +="<th>Percentage</th>" if displayPercentages
 
