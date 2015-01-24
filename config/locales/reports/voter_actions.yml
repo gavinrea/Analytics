@@ -11,7 +11,12 @@ en:
     column_headers:
       - "Form Type"
       - "Num Forms"
+
+      - "Form Type"
+      - "FormNote and Data"
+
       - "Action Type"
-      - "Num Actions"   
-      - "Form Note"
-      - "Num Form Notes"
+      - "Num Actions"
+
+      - "Action Type"
+      - "Notes and Data"

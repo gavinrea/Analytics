@@ -45,3 +45,8 @@ gem "rspec-rails"
 
 #added by gavin rea to fix nokogiri load error
 gem 'nokogiri'
+
+#addd for debugging in eclipse
+gem 'byebug'
+
+gem 'debase'
